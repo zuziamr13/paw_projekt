@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj film lub ksiazke do katalogu</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Twoj katalog</h1>
+
+        <nav>
+            <a href="practice.html">Strona główna</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Dodaj książkę lub film</h2>
+
+            <form method="post">
+
+                <div>
+                    <label for="title">
+                        Tytuł:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="author">
+                        Autor lub rezyser:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="author"
+                        name="author"
+                    >
+                </div>
+
+                <div>
+                    <label for="date">
+                        Data obejrzenia/przeczytania:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                    >
+                </div>
+
+                <div>
+                    <label for="category">
+                        Kategoria:
+                    </label>
+
+                    <select
+                        id="category"
+                        name="category"
+                    >
+                        <option value="">
+                            Wybierz kategorię
+                        </option>
+
+                        <option value="movie">
+                            Film
+                        </option>
+
+                        <option value="book">
+                            Ksiazka
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="grnre">
+                        Gatunek:
+                    </label>
+
+                    <select
+                        id="genre"
+                        name="genre"
+                    >
+                        <option value="">
+                            Wybierz gatunek
+                        </option>
+
+                        <option value="drama">
+                            Dramat
+                        </option>
+
+                        <option value="comedy">
+                            Komedia
+                        </option>
+
+                        <option value="romance">
+                            Romans
+                        </option>
+
+                        <option value="documental">
+                            Document
+                        </option>
+
+                        <option value="action">
+                            Akcja
+                        </option>
+
+                        <option value="thriller">
+                            Thriller
+                        </option>
+
+                        <option value="horror">
+                            Horror
+                        </option>
+
+                        <option value="scifi">
+                            Science-fiction
+                        </option>
+
+                        <option value="fantasy">
+                            Fantasy
+                        </option>
+
+                        <option value="novel">
+                            Powiesc
+                        </option>
+
+                        <option value="criminal">
+                            Kryminal
+                        </option>
+
+                        <option value="history">
+                            Historyczny
+                        </option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="score">
+                        Twoja ocena:
+                    </label>
+
+                    <select
+                        id="score"
+                        name="score"
+                    >
+                        <option value="">
+                            Wybierz ocene (1-5)
+                        </option>
+
+                        <option value="one">
+                            1 gwiazka
+                        </option>
+
+                        <option value="two">
+                            2 gwiazdki
+                        </option>
+
+                        <option value="three">
+                            3 gwiazdki
+                        </option>
+
+                        <option value="four">
+                            4 gwiazdki
+                        </option>
+
+                        <option value="five">
+                            5 gwiazdek
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">
+                        Dodaj książkę lub film
+                    </button>
+
+                    <button type="reset">
+                        Wyczyść formularz
+                    </button>
+                </div>
+
+                <div>
+                    <p>Obejrzane/przeczytane:</p>
+
+                    <input
+                        type="checkbox"
+                        id="accept"
+                        name="accept"
+                        value="yes"
+                        checked
+                    >
+
+                    <label for="yes">
+                        Tak
+                    </label>
+
+                    <input
+                        type="checkbox"
+                        id="tosee"
+                        name="tosee"
+                        value="tosee"
+                    >
+
+                    <label for="tosee">
+                        Do obejrzenia/przeczytania
+                    </label>
+                </div>
+
+                
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Projekt ćwiczeniowy — Projektowanie aplikacji webowych
+        </p>
+    </footer>
+
+</body>
+</html>

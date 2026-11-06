@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---</title>
+</head>
+<body>
+    <header>
+        <h1>Hej Zuzia!</h1>
+        <h2>Dziennik gier i filmów</h1>
+        <p>
+            Jest to moj projekt na zajecia: Projektowanie aplikacji webowych
+        </p>
+
+        <nav>
+            <a href="add.html">Dodaj film lub ksiazke</a>
+            <a href="#about">O katalogu</a>
+            <a href="#search">Wyszukaj ksiazke lub film</a>
+            <a href="#your">Twoj katalog</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h3>Witaj!</h3>
+            <p>Jest to katalog ksiazek i filmow,</p>
+            <p>obejrzanych, w trakcie ogladanie/czytania lub zapisanych na liscie do obejrzenia/przeczytania</p>
+        </section>
+
+        <section id="search">
+            <h2>Wyszukaj książkę lub film</h2>
+            
+            <form method="get">
+
+    <div>
+        <label for="query">
+            Wpisz tytuł:
+        </label>
+
+        <input
+            type="text"
+            id="query"
+            name="query"
+            placeholder="np. Forest Gump"
+        >
+    </div>
+
+    <div>
+        <label for="search-category">
+            Rodzaj:
+        </label>
+
+        <select
+            id="search-category"
+            name="category"
+        >
+            <option value="">
+                Dowolnie
+            </option>
+
+            <option value="Ksiązka">
+                Ksiazka
+            </option>
+
+            <option value="Film">
+                Film
+            </option>
+
+        </select>
+    </div>
+
+    <button type="submit">
+        Szukaj
+    </button>
+
+</form>
+
+        </section>
+
+        <section id="your">
+            <h3>To jest twoj katalog</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tytuł</th>
+                        <th>Rodzaj</th>
+                        <th>Autor lub Rezyser</th>
+                        <th>Gatunek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Forrest Gump</td>
+                        <td>Film</td>
+                        <td>Robert Zemeckis</td>
+                        <td>Komediodramat</td>
+                    </tr>
+                    <tr>
+                        <td>Lalka</td>
+                        <td>Ksiazka</td>
+                        <td>Bolesław Prus</td>
+                        <td>Powiesc</td>
+                    </tr>
+                </tbody>
+            </table>
+            <article>
+                <h3>Forrest Gump</h3>
+
+                <div class="book-info">
+                    <p>
+                        <strong>Autor/Rezyser:</strong> Robert Zemeckis
+                    </p>
+
+                    <p>
+                        <strong>Opis:</strong> Historia życia Forresta, chłopca o niskim ilorazie inteligencji z niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.
+                    </p>
+                </div>
+
+            </article>
+            <article>
+                <h3>Lalka</h3>
+
+                <div class="book-info">
+                    <p>
+                        <strong>Autor/Rezyser:</strong> Boleslaw Prus
+                    </p>
+
+                    <p>
+                        <strong>Opis:</strong> Lalka to powieść polifoniczna, wielowątkowa, ukazująca wydarzenia i postaci z różnych perspektyw, uznawana za jedno z największych dzieł epoki.
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h3>Kontakt</h3>
+            <p>Katalog filmow i ksiazek</p>
+            <p>ul. Matematyczna 1</p>
+            <p>67 - 670 Torun</p>
+        </section>
+        <p>
+            Projekt ćwiczeniowy — Projektowanie aplikacji webowych
+        </p>
+    </footer>
+</body>
+</html>
