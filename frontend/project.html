@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>---</title>
+    <title>Dziennik filmow i seriali</title>
+    <link rel="stylesheet" href="css/wyglad.css">
 </head>
+
 <body>
     <header>
-        <h1>Hej Zuzia!</h1>
-        <h2>Dziennik gier i filmów</h1>
-        <p>
-            Jest to moj projekt na zajecia: Projektowanie aplikacji webowych
-        </p>
+        <h2>Dziennik filmów i seriali</h1>
+        
 
         <nav>
-            <a href="add.html">Dodaj film lub ksiazke</a>
+            <a href="add.html">Dodaj film lub serial</a>
             <a href="#about">O katalogu</a>
-            <a href="#search">Wyszukaj ksiazke lub film</a>
+            <a href="#search">Wyszukaj film lub serial</a>
             <a href="#your">Twoj katalog</a>
             <a href="#contact">Kontakt</a>
         </nav>
@@ -25,12 +25,12 @@
     <main>
         <section id="about">
             <h3>Witaj!</h3>
-            <p>Jest to katalog ksiazek i filmow,</p>
-            <p>obejrzanych, w trakcie ogladanie/czytania lub zapisanych na liscie do obejrzenia/przeczytania</p>
+            <p>Jest to katalog filmow i seriali</p>
+            <p>obejrzanych, w trakcie ogladanie lub zapisanych na liscie do obejrzenia</p>
         </section>
 
         <section id="search">
-            <h2>Wyszukaj książkę lub film</h2>
+            <h2>Wyszukaj film lub serial</h2>
             
             <form method="get">
 
@@ -86,7 +86,7 @@
                     <tr>
                         <th>Tytuł</th>
                         <th>Rodzaj</th>
-                        <th>Autor lub Rezyser</th>
+                        <th>Rezyser</th>
                         <th>Gatunek</th>
                     </tr>
                 </thead>
@@ -105,10 +105,10 @@
                     </tr>
                 </tbody>
             </table>
-            <article>
+            <article class="task-card">
                 <h3>Forrest Gump</h3>
 
-                <div class="book-info">
+                <div class="movie-info">
                     <p>
                         <strong>Autor/Rezyser:</strong> Robert Zemeckis
                     </p>
@@ -119,16 +119,17 @@
                 </div>
 
             </article>
-            <article>
-                <h3>Lalka</h3>
+            
+            <article class="task-card">
+                <h3>Forrest Gump</h3>
 
-                <div class="book-info">
+                <div class="movie-info">
                     <p>
-                        <strong>Autor/Rezyser:</strong> Boleslaw Prus
+                        <strong>Autor/Rezyser:</strong> Robert Zemeckis
                     </p>
 
                     <p>
-                        <strong>Opis:</strong> Lalka to powieść polifoniczna, wielowątkowa, ukazująca wydarzenia i postaci z różnych perspektyw, uznawana za jedno z największych dzieł epoki.
+                        <strong>Opis:</strong> Historia życia Forresta, chłopca o niskim ilorazie inteligencji z niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.
                     </p>
                 </div>
 
@@ -141,8 +142,8 @@
     <footer>
         <section id="contact">
             <h3>Kontakt</h3>
-            <p>Katalog filmow i ksiazek</p>
-            <p>ul. Matematyczna 1</p>
+            <p>Katalog filmow i seriali</p>
+            <p>ul. Filmowa 1</p>
             <p>67 - 670 Torun</p>
         </section>
         <p>
